@@ -5,12 +5,12 @@ OWNER="marcuzzz"
 REPO=$(git config --get remote.origin.url | sed 's/.*\/\([^/]*\)\.git/\1/')
 
 #Patch version:
-if [ "$1" != "pass-patch" ]; then
-    # Increment the patch version
-    /opt/homebrew/bin/oc
-    npm version patch --force
-    echo "patched..."
-fi
+# if [ "$1" != "pass-patch" ]; then
+#     # Increment the patch version
+#     /opt/homebrew/bin/oc
+#     npm version patch --force
+#     echo "patched..."
+# fi
 
 # BUNDLEID=$(plutil -extract bundleid raw -o - ./info.plist)
 NAME="xlargetype"
