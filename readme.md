@@ -1,6 +1,6 @@
 # Alfred-xlargetype
 
-* Note After installing this app, the first time take about ~10sec to install the depencies...
+* Note After installing this app, the first time it takes about ~10sec to install the depencies...
 
 # Example usage xlargetype:
 
