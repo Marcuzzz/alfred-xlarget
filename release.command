@@ -12,14 +12,12 @@ if [ "$1" != "pass-patch" ]; then
     echo "patched..."
 fi
 
-# BUNDLEID=$(plutil -extract bundleid raw -o - ./info.plist)
 NAME="xlargetype"
 VERSION=$(jq -r .version package.json)
-# plutil -replace version -string $VERSION info.plist
+
 npm run package-mac
 npm run create-installer-mac
 
-#EXE=$(jq -r .name package.json)
 DMGO=release-builds/xlargtype-darwin-x64.dmg
 DMG=release-builds/xlargtype.v$VERSION.dmg
 
