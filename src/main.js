@@ -95,15 +95,24 @@ function createWindow() {
     }
 
     if (global.args.thcolor) {
-        global.data.html += "\n<script>document.th.style.backgroundColor = '"+global.args.thcolor+"';</script>" 
+        global.data.html += `\n
+                                <script>
+                                // Get all <th> elements on the page
+                                var thElements = document.getElementsByTagName('th');
+                            
+                                // Loop through each <th> element and set its background color
+                                for (var i = 0; i < thElements.length; i++) {
+                                    thElements[i].style.backgroundColor = '${global.args.thcolor}';
+                                }
+                                </script>`; 
     }
 
     mainWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(global.data.html)}`);
-    //mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 
-    mainWindow.on('blur', () => {
-        app.quit();
-    });
+    // mainWindow.on('blur', () => {
+    //     app.quit();
+    // });
 
     global.version = app.getVersion();
 
