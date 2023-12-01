@@ -1,5 +1,5 @@
 # Alfred-xlargetype
-
+* This can replace the default: Outputs -> Large Type in Alfred 
 * Note After installing this app, the first time it takes about ~10sec to install the dependencies...
 
 # Example usage xlargetype:
