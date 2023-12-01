@@ -24,7 +24,7 @@ echo "$query"
 
 ```
 
-# Example usage case:
+# Example use case:
 ![example-usecase.gif](assets/example-usecase.gif)
 
 
