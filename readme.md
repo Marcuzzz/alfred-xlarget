@@ -1,6 +1,8 @@
 # Alfred-xlargetype
 
-* Example usage xlargetype:
+* Note After installing this app, the first time take about ~10sec to install the depencies...
+
+# Example usage xlargetype:
 
 ![example-workflow01.png](assets/example-workflow01.png)
 
@@ -8,7 +10,7 @@
 
 ![example-workflow03.png](assets/example-workflow03.png)
 
-* bash script:
+# bash script:
 
 ```
 query=`cat /Users/${USER}/Documents/laptop-config/shortcuts/shortcuts.html`
@@ -22,11 +24,11 @@ echo "$query"
 
 ```
 
-* Example usage case:
+# Example usage case:
 ![example-usecase.gif](assets/example-usecase.gif)
 
 
-* xlargetype options
+# xlargetype options
 
 ```
 /Applications/xlargtype.app/Contents/MacOS/xlargtype --help
@@ -41,3 +43,12 @@ Options:
   --thcolor  Specify th background color                                [string]
   --size     Specify window size                        [number] [default: 0.85]
 ```
+
+# xlargetype can also be included in a Alfred Workflow 
+
+just put it in the workflow folder and use it like so:
+
+```
+./xlargtype.app/Contents/MacOS/xlargtype --file "/Users/marcotten/Documents/laptop-config/shortcuts/shortcuts.html" --bgcolor "#10A383" --thcolor "0d846a" --color "#fff"
+```
+
