@@ -8,6 +8,7 @@
 
 ![example-workflow03.png](assets/example-workflow03.png)
 
+* bash script:
 
 ```
 query=`cat /Users/${USER}/Documents/laptop-config/shortcuts/shortcuts.html`
@@ -21,8 +22,11 @@ echo "$query"
 
 ```
 
+* Example usage case:
 ![example-usecase.gif](assets/example-usecase.gif)
 
+
+* xlargetype options
 
 ```
 /Applications/xlargtype.app/Contents/MacOS/xlargtype --help
