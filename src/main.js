@@ -64,7 +64,11 @@ function createWindow() {
     // Set the window position
     mainWindow.setPosition(xPos, yPos + 20);
 
-    mainWindow.loadFile('./html/index.html');
+    //mainWindow.loadFile('./html/index.html');
+
+    const bgColor = "<script>document.body.style.backgroundColor = '"+global.data.bgColor+"';</script>" 
+
+    mainWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(global.data.html + '\n' + bgColor)}`);
     //mainWindow.webContents.openDevTools()
     //require("@electron/remote/main").enable(mainWindow.webContents);
 
