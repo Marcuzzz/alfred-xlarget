@@ -21,6 +21,8 @@ echo "$query"
 
 ```
 
+![example-usecase.gif](assets/example-usecase.gif)
+
 
 ```
 /Applications/xlargtype.app/Contents/MacOS/xlargtype --help
