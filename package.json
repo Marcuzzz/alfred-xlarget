@@ -7,39 +7,15 @@
   "dependencies": {
     "@electron/remote": "^2.0.8",
     "arg": "^4.1.0",
-    "aws-sdk": "^2.328.0",
-    "chalk": "^2.4.2",
-    "config": "^3.3.9",
     "electron-prompt": "^1.7.0",
-    "fd-slicer": "^1.1.0",
-    "findit2": "~2.2.3",
-    "fs-extra": "^11.1.1",
-    "googleapis": "^114.0.0",
-    "graceful-fs": "~4.1.11",
-    "mime": "^2.3.1",
-    "mkdirp": "~0.5.1",
-    "open": "^8.4.2",
-    "path": "^0.12.7",
-    "pend": "~1.2.0",
-    "rimraf": "~2.6.2",
-    "server-destroy": "^1.0.1",
-    "streamsink": "~1.2.0"
+    "yargs": "^17.7.2"
   },
   "main": "./src/main.js",
   "devDependencies": {
-    "aws-sdk": "^2.1226.0",
     "electron": "^27.1.2",
     "electron-installer-dmg": "^3.0.0",
     "electron-packager": "^17.1.2",
-    "electron-winstaller": "^2.7.0",
-    "fd-slicer": "^1.1.0",
-    "findit2": "~2.2.3",
-    "graceful-fs": "~4.1.11",
-    "mime": "^2.3.1",
-    "mkdirp": "~0.5.1",
-    "pend": "~1.2.0",
-    "rimraf": "~2.6.2",
-    "streamsink": "~1.2.0"
+    "electron-winstaller": "^2.7.0"
   },
   "scripts": {
     "start": "electron .",
