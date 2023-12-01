@@ -108,11 +108,11 @@ function createWindow() {
     }
 
     mainWindow.loadURL(`data:text/html;charset=utf-8,${encodeURIComponent(global.data.html)}`);
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 
-    // mainWindow.on('blur', () => {
-    //     app.quit();
-    // });
+    mainWindow.on('blur', () => {
+        app.quit();
+    });
 
     global.version = app.getVersion();
 
